@@ -346,3 +346,62 @@ footer a:hover {
     text-decoration: underline;
  }
 .mail { color: rgb(47, 39, 152); }
+
+
+/* Udfoldelig produktbeskrivelse */
+
+.produktbeskrivelse {
+    display: flex;
+    flex-direction: column;
+}
+
+.produktbeskrivelse summary {
+    order: 2;
+    list-style: none;
+    cursor: pointer;
+    display: block;
+}
+
+.produktbeskrivelse summary::marker {
+    content: "";
+}
+
+.produktbeskrivelse summary::-webkit-details-marker {
+    display: none;
+}
+
+.produktbeskrivelse .kort-beskrivelse {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.produktbeskrivelse .laes-mere {
+    display: block;
+}
+
+.produktbeskrivelse .laes-mindre {
+    display: none;
+}
+
+.produktbeskrivelse p {
+    order: 1;
+    margin: 0;
+}
+
+.produktbeskrivelse:not([open]) p {
+    display: none;
+}
+
+.produktbeskrivelse[open] .kort-beskrivelse {
+    display: none;
+}
+
+.produktbeskrivelse[open] .laes-mere {
+    display: none;
+}
+
+.produktbeskrivelse[open] .laes-mindre {
+    display: block;
+}
