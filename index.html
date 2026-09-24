@@ -50,15 +50,35 @@
     </p>
 
     <!-- FARVEVÆLGER MED STREGER -->
-    <div class="color-selector">
-      <ul class="colors">
-        <li class="moonlight-white"></li>
-        <li class="lavender-mist"></li>
-        <li class="dusty-rose"></li>
-        <li class="sage-green"></li>
-      </ul>
-      <p class="color-name">Beige</p>
-    </div>
+    <fieldset class="color-selector">
+      <legend>Vælg farve</legend>
+      
+      <label for="radio" class="color-option">
+        <input type="radio" name="color" value="beige" checked>
+        <span class="color moonlight-white" aria-hidden="true"></span>
+        <span>BEIGE</span>
+      </label>
+
+      <label for="radio" class="color-option">
+        <input type="radio" name="color" value="lilla">
+        <span class="color lavender-mist" aria-hidden="true"></span>
+        <span>LILLA</span>
+      </label>
+
+      <label for="radio" class="color-option">
+        <input type="radio" name="color" value="rosa">
+        <span class="color dusty-rose" aria-hidden="true"></span>
+        <span>ROSA</span>
+      </label>
+      
+      <label for="radio" class="color-option">
+        <input type="radio" name="color" value="grøn">
+        <span class="color sage-green" aria-hidden="true"></span>
+        <span>GRØN</span>
+      </label>
+      
+    </fieldset>
+    
     <p class="pris"> 1995,-</p>
 
     <a href="tak.html" class="buy">LÆG I KURV</a>
