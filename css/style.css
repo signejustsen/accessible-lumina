@@ -247,7 +247,7 @@ html {
 .produktinfo {
   position: absolute;
   z-index: 10;
-  width: 400px;
+  width: min(400px, 40vw);
   left: 5%;
   top: 130%;
 }
@@ -267,7 +267,7 @@ html {
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s ease;
-  width: 200px;
+  width: min(200px, 25vw);
 }
 .buy:hover {
   transform: translateX(-150%) scale(1.05);
@@ -277,24 +277,28 @@ html {
 .trefarver {
   position: absolute;
   z-index: 0;
-  width: 550px;
+  max-width: 550px;
+  width: 43vw;
   left: 55%;
   top: 135%;
 }
+
 .billede {
   position: absolute;
   top: 110%;
   left: 55%;
   z-index: 10;
-  width: 550px;
+  max-width: 550px;
+  width: 43vw;
   height: auto;
 }
+
 .pris {
   position: absolute;
   bottom: -15%;
   left: 5%;
   font-family: var(--brødtekst-font);
-  font-size: 24px;
+  font-size: clamp(16px, 1.5vw, 20px);
   color: #40382e;
 }
 
@@ -549,15 +553,15 @@ footer a:hover {
   }
 
   .trefarver {
-    width: 450px;
-    max-width: none;
+    max-width: 450px;
+    width: 43vw;
     left: 35%;
     top: 180px;
   }
 
   .billede {
-    width: 350px;
-    max-width: none;
+    max-width: 550px;
+    width: 43vw;
     left: 40%;
     top: 180px;
   }
@@ -569,7 +573,7 @@ footer a:hover {
   }
 
   .buy {
-    width: 150px;
+    width: min(200px, 25vw);
     padding: 12px 20px;
     left: 30%;
     bottom: 0;
