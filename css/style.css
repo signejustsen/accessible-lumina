@@ -97,6 +97,18 @@ html {
   transform: scale(1.1);
 }
 
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle button {
+  border: none;
+  background: none;
+  font-size: 22px;
+  color: var(--font-farve);
+  cursor: pointer;
+}
+
 /* Hero indhold */
 .hero-content {
   position: relative;
@@ -510,6 +522,7 @@ footer a:hover {
     align-items: center;
 
     box-sizing: border-box;
+    background: var(--farve1);
   }
 
   #logo1 {
@@ -523,15 +536,32 @@ footer a:hover {
   }
 
   .nav-links {
+    display: flex;
+    align-items: center;
     gap: 12px;
   }
+
+  .nav-links li:nth-child(1),
+  .nav-links li:nth-child(2),
+  .nav-links li:nth-child(3) {
+    display: none;
+}
+
+.menu-toggle {
+  display: block;
+}
+.menu-toggle button {
+  font-size: 38px;
+  line-height: 1;
+  padding: 0;
+}
 
   .nav-links a {
     font-size: 9px;
   }
 
   .cart {
-    width: 18px;
+    width: 32px;
   }
 
 
