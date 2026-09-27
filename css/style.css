@@ -590,14 +590,13 @@ footer a:hover {
     max-width: 100%;
     min-height: auto;
     position: relative;
-  
+    padding: 40px 5% 0;
   }
 
   .produktinfo {
     width: 90%;
     max-width: 350px;
     margin: 0 auto;
- 
   }
 
   .product-title{
@@ -607,16 +606,17 @@ footer a:hover {
   .trefarver {
     position: absolute;
     max-width: 550px;
-    width: 95vw;
+    width: 95%;
     left: 2.5%;
-    top: 88%;
+    margin-top: -730px;
   }
 
   .billede {
+    position: relative;
     max-width: 550px;
-    width: 85vw;
+    width: 85%;
     left: 7%;
-    top: 71%;
+    margin-top: -85px;
   }
 
   .pris {
@@ -634,6 +634,65 @@ footer a:hover {
     font-size: 18px;
     margin: 20px auto 0;
   }
+
+  /* Specifikationer*/
+  .specs {
+  background-color: var(--farve1);
+  padding: 50px 20px;
+}
+
+.specs h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 38px;
+}
+
+.specs details {
+  border-top: 1px solid #40382e;
+  padding: 20px 0;
+}
+
+.specs details:last-of-type {
+  border-bottom: 1px solid #40382e;
+}
+
+.specs summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.specs summary::after {
+  content: "+";
+  font-size: 28px;
+  font-weight: normal;
+}
+
+.specs details[open] summary::after {
+  content: "−";
+}
+
+.specs summary::-webkit-details-marker {
+  display: none;
+}
+
+.specs details p {
+  margin: 20px 0 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.specs-image {
+  display: block;
+  width: 80%;
+  max-width: 350px;
+  height: auto;
+  margin: 60px auto 0;
+}
 
 
   /* footer */
