@@ -49,13 +49,17 @@ html {
   color: var(--font-farve);
   letter-spacing: 4px;
 }
-
 #logo2 {
   font-family: var(--brødtekst-font);
   font-size: 23px;
   color: var(--font-farve);
   letter-spacing: 17px;
 }
+.logo:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
 
 .nav-links {
   list-style: none;
@@ -66,17 +70,19 @@ html {
 
 .nav-links a {
   font-family: var(--brødtekst-font);
-  font-size: 14px;
+  font-size: 18px;
   text-decoration: none;
   color: var(--font-farve);
-  transition: 0.3s ease;
+  display: inline-block;
 }
 .nav-links a:hover {
   color: #a08977;
+  transform: scale(1.1);  
+  transition: 0.3s ease;
 }
 
 .cart {
-  width: 24px;
+  width: 40px;
   height: auto;
   transition: 0.3s ease;
 }
@@ -124,8 +130,8 @@ html {
   color: var(--font-farve);
   line-height: 1;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 45%;
+  left: 52.5%;
   transform: translate(-50%, -50%);
   z-index: 2;
   letter-spacing: 100px;
@@ -135,6 +141,7 @@ html {
 .hero-img {
   width: min(500px, 45vw);
   height: auto;
+  top: -17%;
   position: relative;
   z-index: 1;
   justify-self: center;
@@ -144,22 +151,24 @@ html {
 /* Knap */
 .knap1 {
   position: absolute;
-  bottom: 10%;
-  left: 80%;
+  bottom: 17%;
+  left: 20%;
   transform: translateX(-50%);
-  padding: 15px 40px;
+  padding: 30px 40px;
   border: none;
   border-radius: 30px;
-  background: linear-gradient(to right, #514237, #a08977);
+  background: #514237;
   color: white;
   font-family: var(--overskrift-font);
-  font-size: 16px;
+  font-size: 50px;
   cursor: pointer;
   transition: 0.3s ease;
   text-decoration: none;
 }
 .knap1:hover {
   transform: translateX(-50%) scale(1.05);
+  background-color: #a08977;
+
 }
 
 /* Produkt sektion */
@@ -446,6 +455,12 @@ footer summary {
   display: block;
 }
 
+@media (min-width: 601px) {
+    /* kun desktop-ændringer her */
+    
+}
+
+
 @media (max-width: 600px) {
 
   /* generel mobil */
@@ -522,9 +537,10 @@ footer summary {
     transform: translateX(-50%);
     justify-content: center;
     z-index: 3;
-    padding: 22.5px;
+    padding: 15px 30px;
     font-size: 34px;
     text-decoration: none;
+    bottom: 10%;
   }
 
 
