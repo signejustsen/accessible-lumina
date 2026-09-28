@@ -1,8 +1,3 @@
-/* Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Krona+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap");
-
 /* Reset */
 * {
   margin: 0;
@@ -20,11 +15,10 @@ html {
   --farve3: #f0e4d9;
   --font-farve: #514237;
 
-  --logo-font: "Koulen", sans-serif;
-  --overskrift-font: "Krona One", sans-serif;
-  --brødtekst-font: "Inria Sans", sans-serif;
+    --logo-font: "Arial Narrow", Arial, sans-serif;
+    --overskrift-font: "Avenir Next", Arial, sans-serif;
+    --brødtekst-font: "Helvetica Neue", Arial, sans-serif;
 }
-
 /* Hero sektion */
 .hero {
   background: linear-gradient(to bottom, rgba(230, 211, 192, 1), white);
@@ -53,21 +47,22 @@ html {
   display: flex;
   flex-direction: column;
   line-height: 1;
+  text-decoration: none;
 }
 
 #logo1 {
   font-family: var(--logo-font);
-  font-size: 40px;
-  font-weight: 200;
+  font-size: 37px;
+  font-weight: 700;
   color: var(--font-farve);
   letter-spacing: 4px;
 }
 
 #logo2 {
   font-family: var(--brødtekst-font);
-  font-size: 24px;
+  font-size: 23px;
   color: var(--font-farve);
-  letter-spacing: 13px;
+  letter-spacing: 17px;
 }
 
 .nav-links {
@@ -134,7 +129,7 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  letter-spacing: clamp(7px, 2.8vw, 40px); /* min, fleks, maks letter-spacing*/
+  letter-spacing: 100px;
   white-space: nowrap;
 }
 
@@ -158,10 +153,11 @@ html {
   border-radius: 30px;
   background: linear-gradient(to right, #514237, #a08977);
   color: white;
-  font-family: var(--brødtekst-font);
+  font-family: var(--overskrift-font);
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s ease;
+  text-decoration: none;
 }
 .knap1:hover {
   transform: translateX(-50%) scale(1.05);
@@ -288,7 +284,7 @@ html {
   border-radius: 40px;
   background: var(--font-farve);
   color: white;
-  font-family: var(--brødtekst-font);
+  font-family: var(--overskrift-font);
   font-size: 16px;
   text-align: center;
   text-decoration: none;
@@ -367,11 +363,21 @@ footer .col {
   vertical-align: top;
   padding-right: 40px;
 }
-footer h2.logo {
+.footer-logo1 {
   font-size: 24px;
-  letter-spacing: 2px;
-  margin-bottom: 15px;
+  font-family: var(--logo-font);
+  letter-spacing: 1px;
+  font-weight: 600;
 }
+
+.footer-logo2 {
+    font-size: 21px;
+    font-family: var(--logo-font);
+    letter-spacing: 7px;
+    margin-bottom: 15px;
+    margin-top: -15px;
+}
+
 footer h3 {
   font-size: 14px;
   margin-bottom: 10px;
@@ -423,15 +429,18 @@ footer a:hover {
 
 .produktbeskrivelse .laes-mere {
   display: block;
+  font-family: var(--brødtekst-font);
 }
 
 .produktbeskrivelse .laes-mindre {
   display: none;
+  font-family: var(--brødtekst-font);
 }
 
 .produktbeskrivelse p {
   order: 1;
   margin: 0;
+  font-family: var(--brødtekst-font);
 }
 
 .produktbeskrivelse:not([open]) p {
@@ -490,6 +499,10 @@ footer a:hover {
     position: relative;
   }
 
+  #logo1 {
+    font-size: 30px;
+  }
+
   .hero-img {
     position: absolute;
     width: 360px;
@@ -508,7 +521,7 @@ footer a:hover {
     width: 100%;
     transform: translateX(-50%);
     font-size: 66px;
-    letter-spacing: 5px;
+    letter-spacing: 15px;
     white-space: nowrap;
     text-align: center;
     z-index: 2;
@@ -520,9 +533,11 @@ footer a:hover {
     width: 200px;
     left: 35%;
     transform: translateX(-50%);
+    justify-content: center;
     z-index: 3;
-    padding: 20px;
+    padding: 22.5px;
     font-size: 34px;
+    text-decoration: none;
   }
 
 
@@ -532,16 +547,12 @@ footer a:hover {
     position: absolute;
     top: 0;
     left: 0;
-
     width: 100%;
     max-width: 100%;
-
     padding: 40px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     box-sizing: border-box;
     background: var(--farve1);
   }
@@ -553,7 +564,7 @@ footer a:hover {
 
   #logo2 {
     font-size: 21px;
-    letter-spacing: 7px;
+    letter-spacing: 11px;
   }
 
   .nav-links {
@@ -629,7 +640,7 @@ footer a:hover {
   .buy {
     position: static;
     display: block;
-    width: min(200px, 40vw);
+    width: 200px;
     padding: 30px;
     font-size: 18px;
     margin: 20px auto 0;
@@ -643,13 +654,18 @@ footer a:hover {
 
 .specs h2 {
   text-align: center;
-  margin-bottom: 50px;
-  font-size: 38px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-family: var(--overskrift-font);
+  color: var(--font-farve);
 }
 
 .specs details {
   border-top: 1px solid #40382e;
-  padding: 20px 0;
+  padding: 13px 0;
+  font-family: var(--brødtekst-font);
+  color: var(--font-farve);
 }
 
 .specs details:last-of-type {
@@ -662,8 +678,11 @@ footer a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 22px;
-  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 500;
 }
 
 .specs summary::after {
@@ -684,6 +703,7 @@ footer a:hover {
   margin: 20px 0 0;
   font-size: 16px;
   line-height: 1.5;
+  font-family: var(--brødtekst-font);
 }
 
 .specs-image {
@@ -691,7 +711,7 @@ footer a:hover {
   width: 80%;
   max-width: 350px;
   height: auto;
-  margin: 60px auto 0;
+  margin: 40px auto 0;
 }
 
 
