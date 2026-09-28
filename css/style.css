@@ -203,6 +203,10 @@ html {
   letter-spacing: 10px;
 }
 
+.laes-knap{
+    font-size: 20px;
+}
+
 .produktbeskrivelse {
   font-family: var(--brødtekst-font);
   font-size: 16px;
@@ -241,7 +245,7 @@ html {
   gap: 5px;
   cursor: pointer;
   font-family: var(--brødtekst-font);
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .color-option input {
@@ -301,6 +305,7 @@ html {
 }
 .buy:hover {
   transform: scale(1.05);
+  background-color: #a08977;
 }
 
 /* Billeder */
@@ -332,8 +337,10 @@ html {
 .pris {
   margin-top: 15px;  
   font-family: var(--brødtekst-font);
-  font-size: clamp(16px, 1.5vw, 20px);
   color: #40382e;
+  font-size: 26px;
+  font-weight: 500;
+  margin: 15px 0 25px;
 }
 
 /* Footer */
@@ -457,7 +464,14 @@ footer summary {
 
 @media (min-width: 601px) {
     /* kun desktop-ændringer her */
-    
+.buy{
+    padding: 30px 40px;
+    font-size: 28px;
+    width: 250px;
+    margin-top: 30px;
+    margin-left: -3%;
+}
+
 }
 
 
