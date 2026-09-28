@@ -699,6 +699,80 @@ footer summary {
         outline-offset: 3px;
     }
 
+
+    /* Footer */
+    footer {
+        padding: 50px 8%;
+        min-height: 30vh;
+    }
+
+    footer table {
+        width: 100%;
+    }
+
+    footer .col {
+        vertical-align: top;
+        padding-right: 30px;
+        width: 15%;
+    }
+
+
+    footer details {
+        display: block;
+    }
+
+    footer summary {
+        cursor: pointer;
+    }
+
+    footer details p {
+        display: block;
+        margin: 0;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    footer summary::after {
+        content: none;
+    }
+
+    footer summary {
+        font-family: var(--overskrift-font);
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        list-style: none;
+        cursor: default;
+        pointer-events: none;
+    }
+
+    footer summary::-webkit-details-marker {
+        display: none;
+    }
+
+    footer summary::after {
+        content: "";
+    }
+
+    footer details p {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    footer a {
+        line-height: 1.8;
+        font-size: 15px;
+    }
+
+    footer .col:nth-child(2) {
+        padding-left: 100px;
+    }
+    footer .col:first-child {
+        vertical-align: top;
+        transform: translateY(-10px);
+    }
+    
+
 }
 
 
