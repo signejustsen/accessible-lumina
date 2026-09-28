@@ -19,17 +19,9 @@ html {
     --overskrift-font: "Avenir Next", Arial, sans-serif;
     --brødtekst-font: "Helvetica Neue", Arial, sans-serif;
 }
-/* Hero sektion */
-.hero {
-  background: linear-gradient(to bottom, rgba(230, 211, 192, 1), white);
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
-}
 
-/* Navbar */
-/*præsenter dette også*/
+
+/* Navigation/header */
 .navbar {
   width: 100%;
   padding: 20px 50px;
@@ -104,7 +96,15 @@ html {
   cursor: pointer;
 }
 
-/* Hero indhold */
+/* Hero sektion */
+.hero {
+  background: linear-gradient(to bottom, rgba(230, 211, 192, 1), white);
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
 .hero-content {
   position: relative;
   display: grid;
@@ -117,7 +117,6 @@ html {
   max-width: 100%;
 }
 
-/* Præsenter dette hero section */
 .hovedskrift {
   font-family: var(--overskrift-font);
   font-size: clamp(4rem, 12vw, 12rem); /* min, fleks, maks tekststørrelse*/
@@ -163,8 +162,6 @@ html {
   transform: translateX(-50%) scale(1.05);
 }
 
-/*præsentation af hero færdig*/
-
 /* Produkt sektion */
 .produkt {
   background: #ffffff;
@@ -189,6 +186,7 @@ html {
   color: #40382e;
   letter-spacing: 10px;
 }
+
 .specone {
   font-size: 35px;
   font-family: var(--brødtekst-font);
@@ -203,7 +201,7 @@ html {
   margin: 20px 0;
 }
 
-/* FARVEVÆLGER */
+/* Farvevælger */
 .color-selector {
   border-top: 1px solid #40382e;
   border-bottom: 1px solid #40382e;
@@ -329,24 +327,6 @@ html {
   color: #40382e;
 }
 
-/* Andre sektioner */
-.specs {
-  min-height: 100vh;
-  background: url("../img/futtemus.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: var(--farve1);
-}
-.app {
-  min-height: 100vh;
-  background: url("../img/diskus.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: white;
-}
-
 /* Footer */
 footer {
   background-color: #e7d2bd;
@@ -355,21 +335,23 @@ footer {
   color: black;
   font-family: var(--brødtekst-font);
 }
+
 footer table {
   width: 100%;
   border-collapse: collapse;
 }
+
 footer .col {
   vertical-align: top;
   padding-right: 40px;
 }
+
 .footer-logo1 {
   font-size: 24px;
   font-family: var(--logo-font);
   letter-spacing: 1px;
   font-weight: 600;
 }
-
 .footer-logo2 {
     font-size: 21px;
     font-family: var(--logo-font);
@@ -383,10 +365,12 @@ footer h3 {
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
+
 footer p {
   font-size: 13px;
   line-height: 1.8;
 }
+
 footer a {
   color: black;
   text-decoration: none;
@@ -394,6 +378,7 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
 .mail {
   color: rgb(47, 39, 152);
 }
@@ -561,7 +546,6 @@ footer a:hover {
     font-size: 30px;
     letter-spacing: 3px;
   }
-
   #logo2 {
     font-size: 21px;
     letter-spacing: 11px;
@@ -573,24 +557,25 @@ footer a:hover {
     gap: 27px;
   }
 
-  .nav-links li:nth-child(1),
-  .nav-links li:nth-child(2),
-  .nav-links li:nth-child(3) {
-    display: none;
-}
+    .nav-links li:nth-child(1),
+    .nav-links li:nth-child(2),
+    .nav-links li:nth-child(3) {
+        display: none;
+    }
 
-.menu-toggle {
-  display: block;
-}
-.menu-toggle button {
-  font-size: 50px;
-  line-height: 1;
-  padding: 0;
-}
+    .menu-toggle {
+        display: block;
+    }
 
-  .cart {
-    width: 44px;
-  }
+    .menu-toggle button {
+        font-size: 50px;
+        line-height: 1;
+        padding: 0;
+    }
+
+    .cart {
+        width: 44px;
+    }
 
 
   /* produktsektion */
@@ -646,112 +631,212 @@ footer a:hover {
     margin: 20px auto 0;
   }
 
+
   /* Specifikationer*/
-  .specs {
-  background-color: var(--farve1);
-  padding: 50px 20px;
-}
+  
+    .specs {
+        background-color: var(--farve1);
+        padding: 50px 20px;
+    }
 
-.specs h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 30px;
-  letter-spacing: 5px;
-  font-family: var(--overskrift-font);
-  color: var(--font-farve);
-}
+    .specs h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 30px;
+        letter-spacing: 5px;
+        font-family: var(--overskrift-font);
+        color: var(--font-farve);
+    }
 
-.specs details {
-  border-top: 1px solid #40382e;
-  padding: 13px 0;
-  font-family: var(--brødtekst-font);
-  color: var(--font-farve);
-}
+    .specs details {
+        border-top: 1px solid #40382e;
+        padding: 13px 0;
+        font-family: var(--brødtekst-font);
+        color: var(--font-farve);
+    }
 
-.specs details:last-of-type {
-  border-bottom: 1px solid #40382e;
-}
+    .specs details:last-of-type {
+        border-bottom: 1px solid #40382e;
+    }
 
-.specs summary {
-  list-style: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 18px;
-  letter-spacing: 3px;
-  font-weight: 500;
-}
+    .specs summary {
+        list-style: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 18px;
+        letter-spacing: 3px;
+        font-weight: 500;
+    }
 
-.specs summary::after {
-  content: "+";
-  font-size: 28px;
-  font-weight: normal;
-}
+    .specs summary::after {
+        content: "+";
+        font-size: 28px;
+        font-weight: normal;
+    }
 
-.specs details[open] summary::after {
-  content: "−";
-}
+    .specs details[open] summary::after {
+        content: "−";
+    }
 
-.specs summary::-webkit-details-marker {
-  display: none;
-}
+    .specs summary::-webkit-details-marker {
+        display: none;
+    }
 
-.specs details p {
-  margin: 20px 0 0;
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: var(--brødtekst-font);
-}
+    .specs details p {
+        margin: 20px 0 0;
+        font-size: 16px;
+        line-height: 1.5;
+        font-family: var(--brødtekst-font);
+    }
 
-.specs-image {
-  display: block;
-  width: 80%;
-  max-width: 350px;
-  height: auto;
-  margin: 40px auto 0;
-}
+    .specs-image {
+        display: block;
+        width: 80%;
+        max-width: 350px;
+        height: auto;
+        margin: 40px auto 0;
+    }
 
 
-  /* footer */
-  footer {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
+    /* App sektion */
 
-    margin: 0;
-    padding: 30px 20px;
+   /* App sektion */
 
-    min-height: auto;
-    overflow: hidden;
-  }
+    .app {
+        background-color: var(--farve1);
+        padding: 70px 18px 80px;
+        color: var(--font-farve);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
 
-  footer table {
-    width: 100%;
-    max-width: 100%;
-    table-layout: fixed;
-  }
+    .app h2 {
+        grid-column: 1 / -1;
+        margin-bottom: 25px;
+        font-size: 32px;
+        letter-spacing: 4px;
+        font-family: var(--overskrift-font);
+    }
 
-  footer .col {
-    padding-right: 10px;
-    vertical-align: top;
-  }
+    .app h3 {
+        grid-column: 1 / -1;
+        margin-bottom: 8px;
+        font-size: 22px;
+        font-family: var(--brødtekst-font);
+    }
 
-  footer h2.logo {
-    font-size: 16px;
-    letter-spacing: 1px;
-  }
+    .app > p {
+        grid-column: 1 / -1;
+        font-size: 16px;
+        line-height: 1.4;
+        font-family: var(--brødtekst-font);
+    }
 
-  footer h3 {
-    font-size: 9px;
-    margin-bottom: 6px;
-  }
+    .app ul {
+        grid-column: 1 / -1;
+        background: #786b6b;
+        border-radius: 28px;
+        padding: 25px 30px;
+        margin: 25px 0 40px;
+        font-size: 14px;
+        color: white;
+        font-family: var(--brødtekst-font);
+    }
 
-  footer p {
-    font-size: 9px;
-    line-height: 1.5;
-  }
+    .app li {
+        margin-bottom: 22px;
+    }
+
+    .app li:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Telefon */
+    .app > img {
+        grid-column: 1;
+        width: 165px;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+        margin-right: 24px;
+        margin-left: 10px;
+    }
+
+    /* Download */
+        .download {
+        grid-column: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .download p {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: var(--brødtekst-font);
+    }
+
+    .download a {
+        display: block;
+        width: 125px;
+        padding: 10px 8px;
+        margin: 0;
+        border-radius: 25px;
+        background-color: var(--font-farve);
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 1.1;
+        font-family: var(--overskrift-font);
+    }
+
+    /* footer */
+
+    footer {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+
+        margin: 0;
+        padding: 30px 20px;
+
+        min-height: auto;
+        overflow: hidden;
+    }
+
+    footer table {
+        width: 100%;
+        max-width: 100%;
+        table-layout: fixed;
+    }
+
+    footer .col {
+        padding-right: 10px;
+        vertical-align: top;
+    }
+
+    footer h2.logo {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    footer h3 {
+        font-size: 9px;
+        margin-bottom: 6px;
+    }
+
+    footer p {
+        font-size: 9px;
+        line-height: 1.5;
+    }
 
 }
