@@ -848,7 +848,7 @@ footer summary {
         font-family: var(--brødtekst-font);
     }
 
-    .download a {
+    .download button {
         display: block;
         width: 125px;
         padding: 10px 8px;
