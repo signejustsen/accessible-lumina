@@ -472,6 +472,109 @@ footer summary {
     margin-left: -3%;
 }
 
+ .specs {
+        min-height: 800px;
+        padding: 100px 8%;
+        background-color: var(--farve1);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto repeat(5, auto);
+        column-gap: 80px;
+        align-items: start;
+    }
+
+    .specs h2 {
+        grid-column: 1;
+        grid-row: 1;
+        font-family: var(--overskrift-font);
+        font-size: 48px;
+        color: var(--font-farve);
+        margin: 0 0 40px;
+        letter-spacing: 10px;
+    }
+
+    .specs details:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .specs details:nth-of-type(2) {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .specs details:nth-of-type(3) {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .specs details:nth-of-type(4) {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .specs details:nth-of-type(5) {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    .specs details {
+        border-top: 1px solid var(--font-farve);
+        padding: 40px 0;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .specs details:last-of-type {
+        border-bottom: 1px solid var(--font-farve);
+    }
+
+    .specs summary {
+        font-family: var(--brødtekst-font);
+        font-size: 22px;
+        color: var(--font-farve);
+        cursor: pointer;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .specs summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .specs summary::after {
+        content: "+";
+        font-size: 28px;
+    }
+
+    .specs details[open] summary::after {
+        content: "−";
+    }
+    .specs summary:hover::after {
+        transform: scale(1.5);
+        color: #a08977;
+        transition: 0.2s ease;
+    }
+
+    .specs details p {
+        font-family: var(--brødtekst-font);
+        font-size: 17px;
+        line-height: 1.6;
+        color: var(--font-farve);
+        margin: 20px 0 0;
+    }
+
+    .specs img {
+        grid-column: 2;
+        grid-row: 1 / 7;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        align-self: center;
+        justify-self: center;
+    }
 }
 
 
